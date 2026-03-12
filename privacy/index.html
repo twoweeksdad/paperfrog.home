@@ -1,1 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | PaperFrog</title>
+  <style>
+    :root {
+      --bg: #0d1b1e;
+      --panel: #11292d;
+      --panel-2: #16363b;
+      --text: #e8f4ef;
+      --muted: #b8d1c8;
+      --accent: #4fd1b5;
+      --line: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(255, 224, 130, 0.16), transparent 18%),
+        radial-gradient(circle at 85% 18%, rgba(79, 209, 181, 0.10), transparent 18%),
+        linear-gradient(180deg, #10252a 0%, #0b171a 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap {
+      width: min(920px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 40px 0 72px;
+    }
+    .hero, .panel {
+      background: linear-gradient(180deg, rgba(18, 46, 51, 0.94), rgba(12, 30, 34, 0.94));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+    }
+    .hero {
+      padding: 28px 28px 22px;
+      margin-bottom: 18px;
+    }
+    .panel { padding: 28px; }
+    h1, h2, h3, h4 { margin: 0 0 12px; line-height: 1.25; }
+    h1 { font-size: clamp(30px, 5vw, 42px); }
+    h2 { font-size: clamp(24px, 3vw, 30px); margin-top: 28px; }
+    h3 { font-size: 18px; margin-top: 20px; }
+    h4 { font-size: 16px; margin-top: 18px; }
+    p, li { color: var(--muted); }
+    .meta {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .chip {
+      border: 1px solid rgba(79, 209, 181, 0.25);
+      color: #d7fff3;
+      background: rgba(79, 209, 181, 0.10);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+    .lang {
+      display: flex;
+      gap: 8px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+    .lang button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .lang button.active {
+      background: var(--accent);
+      color: #06231c;
+      border-color: transparent;
+      font-weight: 700;
+    }
+    .lang-note {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    ul { padding-left: 20px; }
+    a { color: #8be7d1; }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 28px 0;
+    }
+    .policy { display: none; }
+    .policy.active { display: block; }
+    @media (max-width: 640px) {
+      .hero, .panel { padding: 22px 18px; }
+      .wrap { width: min(920px, calc(100vw - 20px)); padding-top: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Privacy Policy</h1>
+      <div class="meta">PaperFrog</div>
+      <div class="meta">Last updated: 2026-03-11 · Contact: twoweeksdad@gmail.com</div>
+      <div class="chips">
+        <span class="chip">Optional Nickname Ranking</span>
+        <span class="chip">Firestore Ranking</span>
+        <span class="chip">Google AdMob</span>
+        <span class="chip">Local Save Data</span>
+      </div>
+      <div class="lang">
+        <button id="lang-en" type="button">English</button>
+        <button id="lang-ko" type="button">한국어</button>
+      </div>
+      <div class="lang-note">You can force a language via <code>?lang=en</code> or <code>?lang=ko</code>.</div>
+    </section>
 
+    <section class="panel">
+      <article id="policy-en" class="policy">
+        <h2>English</h2>
+        <p>This Privacy Policy explains how PaperFrog (the “App”) collects, uses, stores, and protects user information. By using the App, you agree to this Privacy Policy.</p>
+        <h3>1. Information We Collect</h3>
+        <p>The App can be played without creating an account. Ranking participation is optional and uses a nickname chosen by the user.</p>
+        <h4>Optional Ranking Participation</h4>
+        <ul>
+          <li>User-chosen nickname</li>
+          <li>App-generated anonymous installation identifier</li>
+          <li>Ranking record data such as score, clear time, jumps, and created time</li>
+        </ul>
+        <h4>Advertising (Google AdMob)</h4>
+        <p>The App uses Google AdMob to display ads. AdMob may automatically collect or process:</p>
+        <ul>
+          <li>Device information</li>
+          <li>Advertising identifiers such as Advertising ID or App Set ID</li>
+          <li>IP address and approximate location derived from network data</li>
+          <li>App interaction and ad performance information</li>
+          <li>Cookies or similar technologies where applicable</li>
+        </ul>
+        <h4>Locally Stored Gameplay Data</h4>
+        <p>The App stores some gameplay data locally on the device, including:</p>
+        <ul>
+          <li>Best score</li>
+          <li>Best clear time</li>
+          <li>Best jump count</li>
+          <li>Heart state and refill timing</li>
+          <li>Ranking nickname</li>
+          <li>Anonymous ranking installation identifier</li>
+        </ul>
+        <h3>2. How We Use Information</h3>
+        <ul>
+          <li>To provide optional ranking and player record features</li>
+          <li>To store and restore gameplay-related progress on the device</li>
+          <li>To display ads and measure ad performance</li>
+          <li>To operate, maintain, secure, and improve the App</li>
+        </ul>
+        <h3>3. Data Storage</h3>
+        <p>Ranking-related data may be processed and stored using Google services such as Cloud Firestore.</p>
+        <p>Gameplay records needed only on the device may be stored locally using device storage.</p>
+        <h3>4. Data Retention</h3>
+        <p>We retain data only for as long as necessary to provide the App, comply with legal obligations, resolve disputes, prevent abuse, and enforce our policies.</p>
+        <ul>
+          <li>Local gameplay data remains on the device until the user deletes the app or clears app data.</li>
+          <li>Optional ranking data may remain until the user clears ranking participation, requests deletion, or the service is discontinued.</li>
+        </ul>
+        <h3>5. Data Sharing</h3>
+        <p>The App does not sell user data.</p>
+        <p>However, data may be processed by third-party service providers as part of the App’s functionality:</p>
+        <ul>
+          <li>Google / Firebase for ranking, analytics, and backend services</li>
+          <li>Google AdMob for advertising, fraud prevention, and ad measurement</li>
+        </ul>
+        <h3>6. Security</h3>
+        <p>Data transmitted to third-party services is sent using industry-standard security measures such as HTTPS/TLS. We rely on the security controls provided by Google Play Services, Firebase, and related SDK providers.</p>
+        <h3>7. Children’s Privacy</h3>
+        <p>The App is not directed to children and does not knowingly collect personal information from children. If you believe a child has provided personal information, please contact us so we can take appropriate action.</p>
+        <h3>8. Data Deletion and Ranking Requests</h3>
+        <p>Users may stop participating in rankings inside the App by clearing their ranking nickname. Users may also request deletion of ranking-related data by contacting us at <a href="mailto:twoweeksdad@gmail.com">twoweeksdad@gmail.com</a>.</p>
+        <h3>9. Changes to This Policy</h3>
+        <p>This Privacy Policy may be updated from time to time. Any changes will be posted on this page with an updated effective date.</p>
+        <h3>10. Contact</h3>
+        <p>If you have any questions about this Privacy Policy, please contact:</p>
+        <p><a href="mailto:twoweeksdad@gmail.com">twoweeksdad@gmail.com</a></p>
+        <hr>
+        <p>Third-party service references:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+          <li><a href="https://firebase.google.com/support/privacy/">Firebase Privacy and Security</a></li>
+        </ul>
+      </article>
+
+      <article id="policy-ko" class="policy">
+        <h2>한국어</h2>
+        <p>본 개인정보 처리방침은 점핑! 종이개구리(이하 “앱”)가 사용자 정보를 어떻게 수집, 이용, 보관 및 보호하는지 설명합니다. 사용자는 앱을 이용함으로써 본 방침에 동의하게 됩니다.</p>
+        <h3>1. 수집하는 정보</h3>
+        <p>본 앱은 회원가입 없이 플레이할 수 있습니다. 랭킹 참여는 선택 사항이며, 사용자가 직접 정한 닉네임을 사용할 수 있습니다.</p>
+        <h4>선택적 랭킹 참여</h4>
+        <ul>
+          <li>사용자가 직접 입력한 랭킹 닉네임</li>
+          <li>앱이 생성한 익명 설치 식별자</li>
+          <li>점수, 클리어 시간, 점프 수, 기록 생성 시각 등의 랭킹 데이터</li>
+        </ul>
+        <h4>광고 (Google AdMob)</h4>
+        <p>본 앱은 Google AdMob을 사용하여 광고를 표시합니다. AdMob은 광고 제공 및 성과 측정을 위해 다음 정보를 자동으로 수집하거나 처리할 수 있습니다.</p>
+        <ul>
+          <li>기기 정보</li>
+          <li>광고 식별자(Advertising ID, App Set ID 등)</li>
+          <li>IP 주소 및 네트워크 기반 대략적 위치 정보</li>
+          <li>앱 상호작용 및 광고 성과 정보</li>
+          <li>쿠키 또는 유사 기술</li>
+        </ul>
+        <h4>단말 내 로컬 저장 정보</h4>
+        <p>본 앱은 다음과 같은 게임 진행 정보를 단말 내에 저장할 수 있습니다.</p>
+        <ul>
+          <li>최고 점수</li>
+          <li>최고 클리어 시간</li>
+          <li>최고 점프 횟수</li>
+          <li>하트 상태 및 충전 시각</li>
+          <li>랭킹 닉네임</li>
+          <li>익명 설치 식별자</li>
+        </ul>
+        <h3>2. 정보 이용 목적</h3>
+        <ul>
+          <li>선택적 랭킹 및 기록 기능 제공</li>
+          <li>게임 진행 상태 및 로컬 저장 데이터 유지</li>
+          <li>광고 제공 및 광고 성과 측정</li>
+          <li>앱 운영, 유지보수, 보안 강화 및 개선</li>
+        </ul>
+        <h3>3. 데이터 저장</h3>
+        <p>랭킹 관련 데이터는 Cloud Firestore 등 Google 서비스 기반 인프라에서 처리 및 저장될 수 있습니다.</p>
+        <p>기기 내부에만 필요한 일부 플레이 데이터는 단말 로컬 저장소에 저장될 수 있습니다.</p>
+        <h3>4. 데이터 보관 기간</h3>
+        <p>개발자는 서비스 제공, 법적 의무 이행, 분쟁 대응, 부정 이용 방지 및 정책 집행에 필요한 기간 동안만 데이터를 보관합니다.</p>
+        <ul>
+          <li>로컬 게임 데이터는 사용자가 앱을 삭제하거나 앱 데이터를 삭제할 때까지 단말에 남을 수 있습니다.</li>
+          <li>선택적 랭킹 데이터는 사용자가 랭킹 참여를 해제하거나 삭제 요청을 하거나 서비스가 종료될 때까지 보관될 수 있습니다.</li>
+        </ul>
+        <h3>5. 제3자 제공 및 처리</h3>
+        <p>본 앱은 사용자의 정보를 판매하지 않습니다.</p>
+        <p>다만 앱 기능 제공을 위해 다음 외부 서비스 제공자가 데이터를 처리할 수 있습니다.</p>
+        <ul>
+          <li>Google / Firebase: 랭킹, 분석, 백엔드 서비스 제공</li>
+          <li>Google AdMob: 광고 제공, 부정 이용 방지, 광고 측정</li>
+        </ul>
+        <h3>6. 보안</h3>
+        <p>제3자 서비스로 전송되는 데이터는 HTTPS/TLS 등 업계 표준 보안 방식으로 전송됩니다. 또한 Google Play Services, Firebase 및 관련 SDK 제공자의 보안 통제에 의존합니다.</p>
+        <h3>7. 아동의 개인정보 보호</h3>
+        <p>본 앱은 아동을 주요 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다. 아동이 개인정보를 제공한 것으로 의심되는 경우 아래 연락처로 문의해 주시기 바랍니다.</p>
+        <h3>8. 데이터 삭제 및 랭킹 요청</h3>
+        <p>사용자는 앱 내 `랭킹 참여 해제` 기능으로 랭킹 참여를 중단할 수 있으며, 랭킹 관련 데이터 삭제를 아래 이메일로 요청할 수 있습니다.</p>
+        <p><a href="mailto:twoweeksdad@gmail.com">twoweeksdad@gmail.com</a></p>
+        <h3>9. 방침 변경</h3>
+        <p>본 개인정보 처리방침은 변경될 수 있으며, 변경 시 본 페이지에 반영하고 시행일을 업데이트합니다.</p>
+        <h3>10. 문의</h3>
+        <p>개인정보 처리방침 관련 문의:</p>
+        <p><a href="mailto:twoweeksdad@gmail.com">twoweeksdad@gmail.com</a></p>
+        <hr>
+        <p>제3자 서비스 참고:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></li>
+          <li><a href="https://firebase.google.com/support/privacy/">Firebase 개인정보 및 보안</a></li>
+        </ul>
+      </article>
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      const enButton = document.getElementById('lang-en');
+      const koButton = document.getElementById('lang-ko');
+      const enPolicy = document.getElementById('policy-en');
+      const koPolicy = document.getElementById('policy-ko');
+
+      function setLanguage(lang) {
+        const normalized = lang === 'ko' ? 'ko' : 'en';
+        document.documentElement.lang = normalized;
+        enButton.classList.toggle('active', normalized === 'en');
+        koButton.classList.toggle('active', normalized === 'ko');
+        enPolicy.classList.toggle('active', normalized === 'en');
+        koPolicy.classList.toggle('active', normalized === 'ko');
+
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', normalized);
+        history.replaceState(null, '', url.toString());
+      }
+
+      enButton.addEventListener('click', function () { setLanguage('en'); });
+      koButton.addEventListener('click', function () { setLanguage('ko'); });
+
+      const params = new URLSearchParams(window.location.search);
+      const browserLang = (navigator.language || '').toLowerCase();
+      const initial = params.get('lang') || (browserLang.startsWith('ko') ? 'ko' : 'en');
+      setLanguage(initial);
+    }());
+  </script>
+</body>
+</html>
